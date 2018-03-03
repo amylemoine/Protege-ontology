@@ -6,7 +6,863 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2">
+        <rdfs:comment>An ontology that describes characters from the show &quot;The Simpsons.&quot;</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasAunt">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBoss -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBoss">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasCoworker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasCoworker">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isCoworkerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHusband">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNephew -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNephew">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasPrincipal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasPrincipal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isPrincipalOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasStudent">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isTeacherOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasTeacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasTeacher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasTeacher">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isTeacherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasUncle">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isUncleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isCoworkerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isCoworkerOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandchildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isPrincipalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isPrincipalOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isTeacherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isTeacherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isTeacherOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isUncleOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AgnesSkinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AgnesSkinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BerniceHibbert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BerniceHibbert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#CharlesMontgomeryBurns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#CharlesMontgomeryBurns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#EdnaKrabappel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#EdnaKrabappel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustyTheClown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustyTheClown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LingBouvier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LingBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MoeSzyslak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MoeSzyslak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WaylonSmithers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WaylonSmithers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
