@@ -32,21 +32,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasAunt -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasAunt">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt"/>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBoss -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToWorkAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBoss">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToWorkAt"/>
     
 
 
@@ -65,24 +59,7 @@
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasCoworker -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasCoworker">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isCoworkerOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasEmployee">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     </owl:ObjectProperty>
     
 
@@ -185,14 +162,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNephew -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNephew">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece">
@@ -206,14 +175,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent">
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasPrincipal -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasPrincipal">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isPrincipalOf"/>
     </owl:ObjectProperty>
     
 
@@ -252,14 +213,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasUncle -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasUncle">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isUncleOf"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife">
@@ -272,14 +225,6 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBossOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isEmployeeOf"/>
-    </owl:ObjectProperty>
     
 
 
@@ -303,6 +248,14 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isCoworkerOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
     </owl:ObjectProperty>
     
 
@@ -430,6 +383,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isStudentOf">
@@ -452,7 +413,34 @@
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Spouse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#staysAtHome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#staysAtHome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNeighbor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNeighbor"/>
     
 
 
@@ -470,16 +458,115 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Father"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandfather"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandparentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isParentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AgnesSkinner -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Aunt -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AgnesSkinner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Aunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
     </owl:Class>
     
 
@@ -487,140 +574,398 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Son"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BerniceHibbert -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Bouvier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BerniceHibbert">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Bouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brother -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#CharlesMontgomeryBurns -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#CharlesMontgomeryBurns">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BurnsFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sibling"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#EdnaKrabappel -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#EdnaKrabappel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Son"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family"/>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Father -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Father">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Parent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Flanders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Flanders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandfather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandfather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandmother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandmother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Location"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Father"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Husband"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PowerPlant"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToWorkAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PowerPlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Husband -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Husband">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Spouse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Wife"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JuliusHibbert">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HibbertFamily"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrabappelFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustyTheClown -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustyTheClown">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KrustofskyFamily"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LingBouvier -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LingBouvier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Bouvier"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandmother"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Parent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandchild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -628,29 +973,246 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBrother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Location -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Location"/>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBrother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandparent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSibling"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isChildOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSiblingOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Person"/>
     </owl:Class>
     
 
@@ -658,7 +1220,7 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
     </owl:Class>
     
 
@@ -666,7 +1228,26 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Flanders"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Home"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Wife"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#staysAtHome"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Home"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -674,23 +1255,84 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Son"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MoeSzyslak -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MoeSzyslak">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Parent"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Neighbor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Neighbor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
     </owl:Class>
     
 
@@ -698,31 +1340,109 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Bouvier"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#IsSisterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToWorkAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Work"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasParent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PowerPlant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PowerPlant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Work"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#School -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Location"/>
     </owl:Class>
     
 
@@ -730,76 +1450,91 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BouvierFamily"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Name"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sibling -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SeymourSkinner">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sibling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SimpsonFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SkinnerFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SzyslakFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LovejoyFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Simpson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#FlandersFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sibling"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Son -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHoutenFamily"/>
-    
-
-
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WaylonSmithers -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WaylonSmithers">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SmithersFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Spouse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#WiggumFamily"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Spouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SpringfieldElementary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SpringfieldElementary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Uncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Uncle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHouten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#VanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Wife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Wife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Spouse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Location"/>
+    </owl:Class>
     
 
 
@@ -814,53 +1549,21 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AbrahamSimpson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BartSimpson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HomerSimpson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LisaSimpson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Maggiesimpson"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MargeSimpson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Aunt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Daughter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandmother"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Mother"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Sister"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Wife"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ClancyWiggum"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RalphWiggum"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SarahWiggum"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HelenLovejoy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JessicaLovejoy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#TimothyLovejoy"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#JacquelneBouvier"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#PattyBouvier"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#SelmaBouvier"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#KirkVanHouten"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#LuanneVanHouten"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MilhouseVanHouten"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#MaudeFlanders"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#NedFlanders"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RodFlanders"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ToddFlanders"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brother"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Father"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Grandfather"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Uncle"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
