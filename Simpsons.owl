@@ -25,7 +25,9 @@
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#goesToSchoolAt">
+        <rdfs:comment>Attends a school institution.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -33,8 +35,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasAunt">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Has a mother or father with a sister, or sister-in-law.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -43,6 +44,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasBrother">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf"/>
+        <rdfs:comment>Has a male sibling.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -51,7 +53,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasDaughter">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Has a female offspring.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -60,7 +62,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFather">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Is the offspring of a male parent.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -69,6 +71,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasFriend">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>Has a companion.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -77,6 +80,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGranddaughter">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+        <rdfs:comment>Has a female child relative who is the child of their son or daughter.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -86,7 +90,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandfather">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>The child of one&apos;s parents&apos; father.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -96,8 +100,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandmother">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>The child of one&apos;s parents&apos; mother.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -106,22 +109,24 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasGrandson">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf"/>
+        <rdfs:comment>Has a male child relative who is the child of their son or daughter.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour">
+        <rdfs:comment>The colour or characteristic of hair.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHusband -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHusband">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf"/>
+        <rdfs:comment>Has a male spouse.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -130,6 +135,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasMother">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf"/>
+        <rdfs:comment>Is the offspring of a female parent.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -138,7 +144,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNephew">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Has a sister or brother with a son.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -147,9 +153,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasNiece">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment>Has a sister or brother with a daughter.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -158,7 +162,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSisterOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Has a female sibling.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -167,7 +171,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSon">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Has a male offspring.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -175,74 +179,90 @@
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasWife">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+        <rdfs:comment>Has a female spouse.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge">
+        <rdfs:comment>Is within an age category of.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAuntOf">
+        <rdfs:comment>Is the female sibling of a child&apos;s faher or mother.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isBrotherOf">
+        <rdfs:comment>Is the male sibling of another.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isDaughterOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Is the female offspring of a parent.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFatherOf">
+        <rdfs:comment>Is the male parent of.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isFriendOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>Is companion of.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGranddaughterOf">
+        <rdfs:comment>Is the female child of father or mother&apos;s parent.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandfather">
+        <rdfs:comment>Is the father of one&apos;s child&apos;s child.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandmother">
+        <rdfs:comment>Is the mother of one&apos;s child&apos;s child.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isGrandsonOf">
+        <rdfs:comment>Is the male child of father or mother&apos;s parent.a</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -250,54 +270,64 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isHubandOf">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>is the male spouse of.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isMotherOf">
+        <rdfs:comment>Is the female parent of.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNephewOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Is the male child of a parent&apos;s sibling.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isNieceOf">
+        <rdfs:comment>Is the female child of a parent&apos;s sibling.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSisterOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSisterOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment>Is a female sibling of.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSonOf">
+        <rdfs:comment>Is the male offspring of a parent.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isWifeOf">
+        <rdfs:comment>is the female spouse of.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#livesAt -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#livesAt"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#livesAt">
+        <rdfs:comment>Resides in location.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -305,6 +335,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#worksAt">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>is employed at</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -366,7 +397,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -380,7 +411,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Elderly"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ElderlyAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -429,9 +460,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Age"/>
     </owl:Class>
     
@@ -508,7 +539,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -536,7 +567,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -614,9 +645,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HairColour"/>
     </owl:Class>
     
@@ -630,9 +661,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brown -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BrownColourHair -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brown">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BrownColourHair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HairColour"/>
     </owl:Class>
     
@@ -644,9 +675,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Age"/>
     </owl:Class>
     
@@ -660,9 +691,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Elderly -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ElderlyAge -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Elderly">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ElderlyAge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Age"/>
     </owl:Class>
     
@@ -682,9 +713,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HairColour"/>
     </owl:Class>
     
@@ -753,7 +784,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -867,14 +898,14 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Elderly"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ElderlyAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -918,7 +949,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -939,7 +970,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1025,7 +1056,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1046,7 +1077,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1125,7 +1156,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1146,7 +1177,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1225,7 +1256,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1246,7 +1277,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1346,7 +1377,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1367,7 +1398,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasSister"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1395,7 +1426,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1430,7 +1461,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isSisterOf"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1474,7 +1505,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Red"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RedColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1502,7 +1533,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1624,7 +1655,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brown"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BrownColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1687,7 +1718,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Elderly"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ElderlyAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Ned Flanders is a character on &quot;The Simpsons&quot;; he is sixty years old and is the oldest member of the Flanders family.</rdfs:comment>
@@ -1703,7 +1734,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1752,7 +1783,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1817,9 +1848,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Red -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RedColourHair -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Red">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RedColourHair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HairColour"/>
     </owl:Class>
     
@@ -1854,7 +1885,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Red"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RedColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1868,7 +1899,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1918,7 +1949,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1967,7 +1998,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Adult"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#AdultAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2070,7 +2101,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#hasHairColour"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Red"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#RedColourHair"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2084,7 +2115,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#isAge"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Child"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#ChildAge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2141,9 +2172,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow -->
+    <!-- http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow">
+    <owl:Class rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#HairColour"/>
     </owl:Class>
     
@@ -2203,10 +2234,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Bald"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Blue"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Brown"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Gray"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#Yellow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BlueColourHair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#BrownColourHair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#GrayColourHair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2#YellowColourHair"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
