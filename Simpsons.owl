@@ -6,7 +6,2288 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/amylemoine/ontologies/2018/2/untitled-ontology-2"/>
+    <owl:Ontology rdf:about="http://www.simpsons.com/characters/Simpsons.owl">
+        <rdfs:comment>An ontology that describes characters from the show &quot;The Simpsons.&quot;</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt">
+        <rdfs:comment>Attends a school institution.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasAunt">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+        <rdfs:comment>Has a mother or father with a sister, or sister-in-law.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasBrother">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf"/>
+        <rdfs:comment>Has a male sibling.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+        <rdfs:comment>Has a female offspring.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasFather">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+        <rdfs:comment>Is the offspring of a male parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasFriend -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasFriend">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>Has a companion.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+        <rdfs:comment>Has a female child relative who is the child of their son or daughter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasGrandfather -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasGrandfather">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandfather"/>
+        <rdfs:comment>The child of one&apos;s parents&apos; father.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasGrandmother -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasGrandmother">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandmother"/>
+        <rdfs:comment>The child of one&apos;s parents&apos; mother.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasGrandson -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasGrandson">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandsonOf"/>
+        <rdfs:comment>Has a male child relative who is the child of their son or daughter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasHairColour -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour">
+        <rdfs:comment>The colour or characteristic of hair.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasHusband">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isHubandOf"/>
+        <rdfs:comment>Has a male spouse.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasMother">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+        <rdfs:comment>Is the offspring of a female parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasNephew -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasNephew">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNephewOf"/>
+        <rdfs:comment>Has a sister or brother with a son.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasNiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasNiece">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf"/>
+        <rdfs:comment>Has a sister or brother with a daughter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasSister">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+        <rdfs:comment>Has a female sibling.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasSon">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+        <rdfs:comment>Has a male offspring.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasWife">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf"/>
+        <rdfs:comment>Has a female spouse.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isAge">
+        <rdfs:comment>Is within an age category of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf">
+        <rdfs:comment>Is the female sibling of a child&apos;s faher or mother.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf">
+        <rdfs:comment>Is the male sibling of another.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf">
+        <rdfs:comment>Is the female offspring of a parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf">
+        <rdfs:comment>Is the male parent of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isFriendOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isFriendOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:comment>Is companion of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf">
+        <rdfs:comment>Is the female child of father or mother&apos;s parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isGrandfather -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isGrandfather">
+        <rdfs:comment>Is the father of one&apos;s child&apos;s child.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isGrandmother -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isGrandmother">
+        <rdfs:comment>Is the mother of one&apos;s child&apos;s child.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isGrandsonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isGrandsonOf">
+        <rdfs:comment>Is the male child of father or mother&apos;s parent.a</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isHubandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isHubandOf">
+        <owl:inverseOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf"/>
+        <rdfs:comment>is the male spouse of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf">
+        <rdfs:comment>Is the female parent of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isNephewOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isNephewOf">
+        <rdfs:comment>Is the male child of a parent&apos;s sibling.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isNieceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf">
+        <rdfs:comment>Is the female child of a parent&apos;s sibling.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf">
+        <rdfs:comment>Is a female sibling of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isSonOf">
+        <rdfs:comment>Is the male offspring of a parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isWifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf">
+        <rdfs:comment>is the female spouse of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#livesAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#livesAt">
+        <rdfs:comment>Resides in location.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#worksAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#worksAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>is employed at</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#hasNeighbor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#hasNeighbor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandson"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Abraham Simpson is a character on &quot;The Simpsons&quot;; he is an elderly male, and is the oldest member of the Simpson family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Address -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#AdultAge -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AdultAge">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Age -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Bald -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Bald">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#BarneyGumble -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BarneyGumble">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#BartSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFriend"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandmother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFriendOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandsonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandsonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNephewOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNephewOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Bart Simpson is a character on &quot;The Simpsons&quot;; he is a 10 year old boy, and the oldest child in the Simpson family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#BouvierFamily -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BouvierFamily">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Character -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#ChildAge -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ChildAge">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#DMV -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#DMV">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Family -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#HairColour -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFriend"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Bald"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasWife"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFriendOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isHubandOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#worksAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PowerPlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Homer Simpson is a character on &quot;The Simpsons&quot;; he is a 38 year old male in the Simpson family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGranddaughter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandson"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGrandmother"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Jacqueline Bouvier is a character on &quot;The Simpsons&quot;; she is an eighty year old woman who is the oldest member of the Bouvier family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasWife"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isHubandOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Kirk Van Houten is a character on &quot;The Simpsons&quot;; he is a middle aged man, and member of the Van Houten family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasBrother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandmother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Lisa Simpson is a character on &quot;The Simpsons&quot;; she is an eight year old girl in the Simpson family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHusband"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Luanne Van Houten is a character on &quot;The Simpsons&quot;; she is a middle aged woman, and member of the Van Houten family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasAunt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasBrother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandfather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasGrandmother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isGranddaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isNieceOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Maggie Simpson is a character on &quot;The Simpsons&quot;; she is an one year old baby girl in the Simpson family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasDaughter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHusband"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Marge Simpson is a character on &quot;The Simpsons&quot;; she is an thirty-six year old woman who is a member of the Simpson family by marriage, formerly the Bouvier family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RedColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHusband"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isWifeOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Maude Flanders is a character on &quot;The Simpsons&quot;; she is a middle aged woman and a member of the Flanders family by marriage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFriend"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFriendOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Milhouse Van Houten is a character on &quot;The Simpson&quot;; he is a ten year old boy, and member of the Van Houten family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MoeSzyslak -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MoeSzyslak">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#MoesTavern -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MoesTavern">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#NedFlanders -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFriend"/>
+                <owl:allValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSon"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasWife"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isFriendOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isHubandOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Ned Flanders is a character on &quot;The Simpsons&quot;; he is sixty years old and is the oldest member of the Flanders family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNephew"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNiece"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNiece"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#worksAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#DMV"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Patty Bouvier is a character on &quot;The Simpsons&quot;; she is an forty-one year old woman who is a member of the Bouvier family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#PowerPlant -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PowerPlant">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#RedColourHair -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#RedColourHair">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#RodFlanders -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasBrother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RedColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Rod Flanders is a character on &quot;The Simpsons&quot;; he is an ten year old boy in the Flanders family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#School -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#School"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNephew"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNiece"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasNiece"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasSister"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AdultAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAuntOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#JacquelineBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#worksAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#DMV"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Selma Bouvier is a character on &quot;The Simpsons&quot;; she is an forty-one year old woman who is a member of the Bouvier family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#SimpsonFamily -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SimpsonFamily">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ToddFlanders">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasBrother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFather"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RedColourHair"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasMother"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isAge"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#ChildAge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#RodFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#livesAt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Todd Flanders is a character on &quot;The Simpsons&quot;; he is an eight year old boy in the Flanders family.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#VanHoutenFamily -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#VanHoutenFamily">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#Work -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace -->
+
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace">
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AbrahamSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#KirkVanHouten"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#LuanneVanHouten"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Bald"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BartSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HomerSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#LisaSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaggieSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MargeSimpson"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MaudeFlanders"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MilhouseVanHouten"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace"/>
+            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
