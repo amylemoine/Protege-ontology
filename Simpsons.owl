@@ -23,6 +23,14 @@
     
 
 
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#goesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#goesTo">
+        <rdfs:comment>attends</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt -->
 
     <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#goesToSchoolAt">
@@ -275,6 +283,14 @@
     
 
 
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isMemberOf">
+        <rdfs:comment>belongs to a family or group</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.simpsons.com/characters/Simpsons.owl#isMotherOf -->
 
     <owl:ObjectProperty rdf:about="http://www.simpsons.com/characters/Simpsons.owl#isMotherOf">
@@ -463,22 +479,14 @@
     <!-- http://www.simpsons.com/characters/Simpsons.owl#AdultAge -->
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AdultAge">
-        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
     </owl:Class>
     
 
 
-    <!-- http://www.simpsons.com/characters/Simpsons.owl#Age -->
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#AgeGroup -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
-    
-
-
-    <!-- http://www.simpsons.com/characters/Simpsons.owl#Bald -->
-
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Bald">
-        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
     
 
 
@@ -686,7 +694,7 @@
     <!-- http://www.simpsons.com/characters/Simpsons.owl#ChildAge -->
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ChildAge">
-        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
     </owl:Class>
     
 
@@ -702,7 +710,7 @@
     <!-- http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge -->
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge">
-        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Age"/>
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
     </owl:Class>
     
 
@@ -765,13 +773,6 @@
                 <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasFriend"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#hasHairColour"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Bald"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1660,7 +1661,7 @@
     <!-- http://www.simpsons.com/characters/Simpsons.owl#MoesTavern -->
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MoesTavern">
-        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+        <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
     </owl:Class>
     
 
@@ -2252,16 +2253,6 @@
             <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#NedFlanders"/>
             <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PattyBouvier"/>
             <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SelmaBouvier"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Bald"/>
-            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair"/>
-            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair"/>
-            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair"/>
-            <rdf:Description rdf:about="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
