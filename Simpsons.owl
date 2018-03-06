@@ -527,6 +527,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#GumbleFamily"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Barney Gumble is an adult male, often found at Moe&apos;s tavern</rdfs:comment>
     </owl:Class>
     
 
@@ -1782,6 +1783,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#MoesTavern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Moe is an adult male who owns Moe&apos;s Tavern</rdfs:comment>
     </owl:Class>
     
 
