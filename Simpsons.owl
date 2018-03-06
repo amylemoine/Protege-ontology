@@ -457,7 +457,9 @@
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#Address -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Address">
+        <rdfs:comment>The location that a character lives</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -465,13 +467,16 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AdultAge">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
+        <rdfs:comment>Age group - 18-59 years old (approximately)</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#AgeGroup -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup">
+        <rdfs:comment>Large age categories / groups</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -701,6 +706,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BlueColourHair">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+        <rdfs:comment>Hair colour that is blue.</rdfs:comment>
     </owl:Class>
     
 
@@ -709,6 +715,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BouvierFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Bouvier family group.</rdfs:comment>
     </owl:Class>
     
 
@@ -717,13 +724,16 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#BrownColourHair">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+        <rdfs:comment>Hair colour that is brown.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#Character -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Character"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Character">
+        <rdfs:comment>Name of the Simpsons character.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -731,6 +741,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ChildAge">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
+        <rdfs:comment>Age group - 0-17 years old (approximately)</rdfs:comment>
     </owl:Class>
     
 
@@ -739,6 +750,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#DMV">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+        <rdfs:comment>The Department of Motor Vehicles.</rdfs:comment>
     </owl:Class>
     
 
@@ -747,20 +759,24 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#ElderlyAge">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#AgeGroup"/>
+        <rdfs:comment>Age group - 60+ years old (approximately)</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#Family -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Family">
+        <rdfs:comment>The Family name or group.</rdfs:comment>
+    </owl:Class>
     
 
 
-    <!-- http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly -->
+    <!-- http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly">
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Flanders family group.</rdfs:comment>
     </owl:Class>
     
 
@@ -769,6 +785,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#GrayColourHair">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+        <rdfs:comment>Hair colour that is gray.</rdfs:comment>
     </owl:Class>
     
 
@@ -777,13 +794,16 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#GumbleFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Gumble family group.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#HairColour -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#HairColour">
+        <rdfs:comment>The colour of the character&apos;s hair</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -1606,7 +1626,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMemberOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly"/>
+                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1792,6 +1812,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#MoesTavern">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+        <rdfs:comment>Moe&apos;s Tavern - bar in Springfield.</rdfs:comment>
     </owl:Class>
     
 
@@ -1821,7 +1842,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMemberOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly"/>
+                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2005,6 +2026,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#PowerPlant">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+        <rdfs:comment>The Springfield Nuclear Power Plant.</rdfs:comment>
     </owl:Class>
     
 
@@ -2013,6 +2035,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#RedColourHair">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+        <rdfs:comment>Hair colour that is red.</rdfs:comment>
     </owl:Class>
     
 
@@ -2042,7 +2065,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMemberOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly"/>
+                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2100,7 +2123,9 @@
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#School -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#School"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#School">
+        <rdfs:comment>Where the character attends school.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -2225,6 +2250,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SimpsonFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Simpson family group.</rdfs:comment>
     </owl:Class>
     
 
@@ -2233,6 +2259,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldElementary">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#School"/>
+        <rdfs:comment>An elementary school in the town of Springfield.</rdfs:comment>
     </owl:Class>
     
 
@@ -2241,6 +2268,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SpringfieldRetirementCastle">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+        <rdfs:comment>Springfield Retirement Castle - a retirement home.</rdfs:comment>
     </owl:Class>
     
 
@@ -2249,6 +2277,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#SzyslakFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Szyslak family group.</rdfs:comment>
     </owl:Class>
     
 
@@ -2278,7 +2307,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#isMemberOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamly"/>
+                <owl:someValuesFrom rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#FlandersFamily"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2338,13 +2367,16 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#VanHoutenFamily">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Family"/>
+        <rdfs:comment>The Bouvier family group.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.simpsons.com/characters/Simpsons.owl#Work -->
 
-    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Work"/>
+    <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#Work">
+        <rdfs:comment>Where the character is employed.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -2352,6 +2384,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#YellowColourHair">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#HairColour"/>
+        <rdfs:comment>Hair colour that is yellow.</rdfs:comment>
     </owl:Class>
     
 
@@ -2360,6 +2393,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#316PikelandAvenue">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+        <rdfs:comment>316 Pikeland Avenue - a house in Springfield.</rdfs:comment>
     </owl:Class>
     
 
@@ -2368,6 +2402,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#742EvergreenTerrace">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+        <rdfs:comment>742 Evergreen Terrace - a house in Springfield.</rdfs:comment>
     </owl:Class>
     
 
@@ -2376,6 +2411,7 @@
 
     <owl:Class rdf:about="http://www.simpsons.com/characters/Simpsons.owl#744EvergreenTerrace">
         <rdfs:subClassOf rdf:resource="http://www.simpsons.com/characters/Simpsons.owl#Address"/>
+        <rdfs:comment>744 Evergreen Terrace - a house in Springfield.</rdfs:comment>
     </owl:Class>
     
 
